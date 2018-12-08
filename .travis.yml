@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f azurerathalos/docker-react Dockerfile.dev .
+  - docker build -f FranciscoJavierMartin/docker-react Dockerfile.dev .
 
 script:
-  - docker run azurerathalos/docker-react npm run test -- --coverage
+  - docker run FranciscoJavierMartin/docker-react npm run test -- --coverage
